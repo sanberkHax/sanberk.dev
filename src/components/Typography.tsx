@@ -60,7 +60,7 @@ export const Typography = ({
     >
       {children}
       {underline && (
-        <span className="bg-cyan-300 absolute -bottom-1 left-8 w-[95%] h-0.5"></span>
+        <span className="bg-cyan-300 absolute -bottom-2 left-0 w-full h-[3px]"></span>
       )}
     </Tag>
   );
