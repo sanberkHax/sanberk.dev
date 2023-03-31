@@ -1,3 +1,4 @@
+import { Arrows } from '@/components/Arrows';
 import { Hero } from '@/components/Hero';
 import Head from 'next/head';
 
@@ -10,8 +11,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gradient-to-b from-[#005687] to-[#00112C] h-screen flex flex-col justify-center w-full p-2 sm:p-24 gap-10 items-center">
+      <main className="bg-gradient-to-b from-[#005687] to-[#00112C] h-screen flex flex-col justify-center w-full p-2 xl:p-24 gap-10 items-center">
         <Hero />
+        <Arrows />
       </main>
     </>
   );
