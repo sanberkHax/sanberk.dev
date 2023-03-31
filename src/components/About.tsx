@@ -3,23 +3,29 @@ import { Typography } from './Typography';
 
 export const About = () => {
   return (
-    <section className="flex justify-center gap-10 items-center flex-col h-screen  w-full text-white">
+    <section className="flex gap-10 flex-col justify-center items-center h-screen w-full text-white sm:px-10">
       <Typography variant="h2" bold>
         About Me
       </Typography>
 
       <Card>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsum
-        maiores rerum earum fugiat maxime id illo quis reprehenderit quidem ab
-        doloribus similique, officiis cumque quia neque natus a dignissimos
-        consequuntur, officia adipisci aut. Debitis odio tempora quidem, eveniet
-        nemo quo! Impedit repudiandae reiciendis beatae vitae necessitatibus
-        quam autem optio alias? Nostrum provident ab quod, labore
-        exercitationem, ex quas consectetur reprehenderit id iusto temporibus,
-        laboriosam vel. Beatae delectus cumque laborum dignissimos praesentium
-        ab minus culpa, ratione voluptatibus! Fuga illo perferendis repellendus
-        delectus voluptatibus, consequuntur quia similique dicta! Quis culpa a
-        facilis voluptatibus quam! Eum esse, ad placeat cum quibusdam vero.
+        <Typography variant="body">
+          {`Hi, I'm a Front End Developer who is motivated by the passion for
+          learning new things and strive to outdo myself. The more problems I
+          encounter, the more ambitious I get to solve them. That's why I like
+          tough challenges I might fail in, as failure is the best way to learn
+          and overcome something.`}
+        </Typography>
+        <Typography variant="body">
+          When I was first introduced to Front End Development in 2021, I
+          immediately knew this was the path I wanted to dedicate my time and
+          effort into, as this was the perfect combination of my logical and
+          creative sides. And combination of both is my shortcut to happiness.
+        </Typography>
+        <Typography variant="body">
+          {`I'm interested in working on creative and ambitious projects that are
+          accessible to anyone.`}
+        </Typography>
       </Card>
     </section>
   );
