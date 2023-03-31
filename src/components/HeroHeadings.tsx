@@ -5,7 +5,12 @@ export const HeroHeadings = () => {
     <div className="relative text-white flex flex-col gap-4 sm:gap-10 justify-center items-center">
       <Typography
         variant="body"
-        className="absolute left-1/4 sm:-left-14 -top-10 animate-slideReveal"
+        className="absolute left-1/4 sm:-left-14 -top-10"
+        animation={{
+          initial: { opacity: 0, x: -600 },
+          animate: { opacity: 1, x: 0 },
+          transition: { type: 'spring', bounce: 0.2, duration: 0.6 },
+        }}
       >
         {`Hi there, I'm`}
       </Typography>
@@ -13,11 +18,35 @@ export const HeroHeadings = () => {
         variant="h1"
         underline
         bold
-        className="text-sm md:text-6xl animate-slideReveal delay-400"
+        className="text-sm md:text-6xl"
+        animation={{
+          initial: { opacity: 0, x: -600 },
+          animate: { opacity: 1, x: 0 },
+          transition: {
+            type: 'spring',
+            bounce: 0.2,
+            duration: 0.6,
+            delay: 0.5,
+          },
+        }}
       >
         {` Sanberk Türker`}
       </Typography>
-      <Typography variant="body" bold className="animate-slideReveal">
+      <Typography
+        variant="body"
+        bold
+        className="animate-slideReveal"
+        animation={{
+          initial: { opacity: 0, x: -600 },
+          animate: { opacity: 1, x: 0 },
+          transition: {
+            type: 'spring',
+            bounce: 0.2,
+            duration: 0.6,
+            delay: 1,
+          },
+        }}
+      >
         <span className="text-[#00E0FF]">{'< '}</span>
         Frontend Developer
         <span className="text-[#00E0FF]">{' />'}</span>

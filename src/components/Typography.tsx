@@ -1,4 +1,5 @@
 import React, { ElementType } from 'react';
+import { motion } from 'framer-motion';
 
 type Variant =
   | 'h1'
@@ -17,6 +18,7 @@ interface Props {
   as?: ElementType;
   underline?: boolean;
   bold?: boolean;
+  animation?: object;
 }
 
 const tags: Record<Variant, ElementType> = {
@@ -48,15 +50,35 @@ export const Typography = ({
   underline,
   bold,
   as,
+  animation,
+  ...props
 }: Props) => {
   const sizeClasses = sizes[variant];
   const Tag = as || tags[variant];
+  const AnimatedTag = motion(Tag);
 
+  if (animation && AnimatedTag) {
+    return (
+      <AnimatedTag
+        className={`${sizeClasses} ${className} ${underline && 'relative'} ${
+          bold && 'font-bold'
+        }`}
+        {...animation}
+        {...props}
+      >
+        {children}
+        {underline && (
+          <span className="bg-cyan-300 absolute -bottom-2 left-0 w-full h-[3px]"></span>
+        )}
+      </AnimatedTag>
+    );
+  }
   return (
     <Tag
       className={`${sizeClasses} ${className} ${underline && 'relative'} ${
         bold && 'font-bold'
       }`}
+      {...props}
     >
       {children}
       {underline && (
