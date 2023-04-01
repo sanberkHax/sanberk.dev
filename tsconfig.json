@@ -20,12 +20,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.js",
-    "**/*.tsx",
-    "src/constants/ICON_PATHS.jsx"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.js", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
