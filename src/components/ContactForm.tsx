@@ -6,25 +6,24 @@ export const ContactForm = () => {
     e.preventDefault();
   };
   return (
-    <motion.form
-      initial={{ opacity: 0, x: -300 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ type: 'spring', stiffness: 30, duration: 0.6 }}
-      viewport={{ once: true }}
+    <form
+      //   initial={{ opacity: 0, x: -300 }}
+      //   whileInView={{ opacity: 1, x: 0 }}
+      //   transition={{ type: 'spring', stiffness: 30, duration: 0.6 }}
+      //   viewport={{ once: true }}
       name="contact"
-      action="/success"
       className="flex flex-col gap-10 justify-center w-full text-black"
       data-netlify-honeypot="bot-field"
       data-netlify="true"
       method="POST"
       //   onSubmit={submitHandler}
     >
+      <input type="hidden" name="form-name" value="contact" />
       <p hidden>
         <label>
           Don’t fill this out: <input name="bot-field" />
         </label>
       </p>
-      <input type="hidden" name="form-name" value="contact" />
       <label htmlFor="name" className="text-white">
         Name
       </label>
@@ -81,6 +80,6 @@ export const ContactForm = () => {
       <Button variant="sm" className="w-1/2">
         Send
       </Button>
-    </motion.form>
+    </form>
   );
 };
