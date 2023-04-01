@@ -16,10 +16,12 @@ export const Project = ({ title, description, image, alt, page }: Props) => {
   return (
     <div className="flex-1 flex flex-col gap-10 items-center my-10">
       <Card>
-        <Typography variant="h3" bold className="text-[#00E0FF]">
+        <Typography variant="h3" bold className="text-[#00E0FF] z-10">
           {title}
         </Typography>
-        <Typography variant="body">{description}</Typography>
+        <Typography variant="body" className="z-10">
+          {description}
+        </Typography>
         <div className="flex justify-center items-center">
           <Image src={`/${image}`} width={500} height={300} alt={alt} />
         </div>
