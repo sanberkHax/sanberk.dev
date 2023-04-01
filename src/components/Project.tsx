@@ -3,15 +3,17 @@ import { Card } from './Card';
 import { Typography } from './Typography';
 import Image from 'next/image';
 import { Button } from './Button';
+import Link from 'next/link';
 
 type Props = {
   title: string;
   description: string;
   image: string;
   alt: string;
+  page: string;
 };
 
-export const Project = ({ title, description, image, alt }: Props) => {
+export const Project = ({ title, description, image, alt, page }: Props) => {
   return (
     <div className="flex-1 flex flex-col gap-10 items-center my-10">
       <Card>
@@ -23,9 +25,12 @@ export const Project = ({ title, description, image, alt }: Props) => {
           <Image src={`/${image}`} width={500} height={300} alt={alt} />
         </div>
       </Card>
-      <Button variant="sm" className="w-1/4">
+      <Link
+        href={page}
+        className="border-2 border-cyan-400 p-2 rounded-md hover:bg-sky-600 hover:border-sky-600"
+      >
         Details
-      </Button>
+      </Link>
     </div>
   );
 };

@@ -17,6 +17,7 @@ export const ProjectList = () => {
               Stack Overflow questions."
           alt="Stack Organizer Front Page"
           image="stack-organizer-login.png"
+          page="stack-organizer"
         />
         <Project
           title="Real Store"
@@ -24,6 +25,7 @@ export const ProjectList = () => {
           and Fake Store API."
           alt="Real Store Front Page"
           image="real-store.png"
+          page="real-store"
         />
       </div>
     </section>
