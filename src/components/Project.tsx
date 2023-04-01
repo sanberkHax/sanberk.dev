@@ -2,8 +2,7 @@ import React from 'react';
 import { Card } from './Card';
 import { Typography } from './Typography';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Icon } from './Icon';
+import { Button } from './Button';
 
 type Props = {
   title: string;
@@ -29,12 +28,13 @@ export const Project = ({
           <Typography variant="h3" bold className="text-[#00E0FF] z-10">
             {title}
           </Typography>
-          <Link
-            href={link}
+          <Button
+            variant="sm"
+            link={link}
             className="border-2 border-cyan-400 p-2 rounded-md hover:bg-sky-600 hover:border-sky-600 w-fit text-center z-10"
           >
             Repository
-          </Link>
+          </Button>
         </div>
         <Typography variant="body" className="z-10">
           {description}
@@ -57,12 +57,13 @@ export const Project = ({
           </div>
         )}
       </Card>
-      <Link
-        href={link}
+      <Button
+        variant="sm"
+        link={link}
         className="border-2 border-cyan-400 p-2 rounded-md hover:bg-sky-600 hover:border-sky-600"
       >
         Details
-      </Link>
+      </Button>
     </div>
   );
 };

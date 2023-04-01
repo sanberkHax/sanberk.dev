@@ -24,7 +24,11 @@ export const Hero = () => {
         </motion.div>
         <div className="flex flex-col justify-around items-center gap-10">
           <HeroHeadings />
-          <Button variant="md" className="animate-slideReveal">
+          <Button
+            variant="sm"
+            link="#contact-me"
+            className="text-white border-2 border-cyan-400 p-2 rounded-md hover:bg-sky-600 hover:border-sky-600 w-fit text-center z-10"
+          >
             Contact Me
           </Button>
         </div>
