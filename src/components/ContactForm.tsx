@@ -9,12 +9,12 @@ export const ContactForm = () => {
       data-netlify-honeypot="bot-field"
       data-netlify="true"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <p hidden>
         <label>
           Don’t fill this out: <input name="bot-field" />
         </label>
       </p>
-      <input type="hidden" name="form-name" value="contact-form" />
       <label htmlFor="name" className="text-white">
         Name
       </label>
