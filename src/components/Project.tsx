@@ -2,7 +2,6 @@ import React from 'react';
 import { Card } from './Card';
 import { Typography } from './Typography';
 import Image from 'next/image';
-import { Button } from './Button';
 import Link from 'next/link';
 
 type Props = {

@@ -6,6 +6,7 @@ interface Props {
   variant: Variant;
   children: React.ReactNode;
   className?: string;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 const commonStyles =
