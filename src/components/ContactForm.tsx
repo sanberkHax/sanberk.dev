@@ -2,9 +2,7 @@ import { motion } from 'framer-motion';
 import { Button } from './Button';
 
 export const ContactForm = () => {
-  const submitHandler = (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
+  const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
   return (
@@ -17,6 +15,7 @@ export const ContactForm = () => {
       className="flex flex-col gap-10 justify-center w-full text-black"
       data-netlify-honeypot="bot-field"
       data-netlify="true"
+      onSubmit={submitHandler}
     >
       <p hidden>
         <label>
@@ -77,7 +76,7 @@ export const ContactForm = () => {
         name="message"
         required
       />
-      <Button variant="sm" onClick={submitHandler} className="w-1/2">
+      <Button variant="sm" className="w-1/2">
         Send
       </Button>
     </motion.form>
