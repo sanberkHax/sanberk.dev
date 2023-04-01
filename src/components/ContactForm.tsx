@@ -12,10 +12,12 @@ export const ContactForm = () => {
       transition={{ type: 'spring', stiffness: 30, duration: 0.6 }}
       viewport={{ once: true }}
       name="contact-form"
+      action="/success"
       className="flex flex-col gap-10 justify-center w-full text-black"
       data-netlify-honeypot="bot-field"
       data-netlify="true"
-      onSubmit={submitHandler}
+      method="POST"
+      //   onSubmit={submitHandler}
     >
       <p hidden>
         <label>
