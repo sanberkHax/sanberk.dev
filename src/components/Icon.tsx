@@ -42,13 +42,16 @@ export const Icon = ({
   name,
   className,
   size = 14,
+  ...props
 }: Props) => {
   const iconPath = paths[name];
 
   if (!isAnimated) {
     return (
       <Link href={link}>
-        <svg className={className}>{iconPath}</svg>
+        <svg className={className} viewBox="0 0 128 128">
+          {iconPath}
+        </svg>
       </Link>
     );
   }

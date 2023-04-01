@@ -10,7 +10,7 @@ interface Props {
 }
 
 const commonStyles =
-  'bg-transparent border-4 border-cyan-300 rounded-lg text-white hover:bg-sky-800 hover:border-slate-800';
+  'bg-transparent border-4 border-cyan-300 rounded-lg text-white hover:bg-sky-600 hover:border-sky-600';
 
 const sizes: Record<Variant, string> = {
   sm: `p-2 sm:px-4 text-sm sm:text-md`,

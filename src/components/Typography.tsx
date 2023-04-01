@@ -34,9 +34,9 @@ const tags: Record<Variant, ElementType> = {
 
 const sizes: Record<Variant, string> = {
   h1: 'text-4xl sm:text-5xl',
-  h2: 'text-4xl sm:text-3xl',
-  h3: 'text-3xl sm:text-2xl',
-  h4: 'text-2xl sm:text-1xl',
+  h2: 'text-3xl sm:text-4xl',
+  h3: 'text-2xl',
+  h4: 'text-2xl sm:text-xl',
   h5: 'text-xl sm:text-lg',
   body: 'text-md sm:text-lg',
   'body-small': 'text-md sm:text-sm',
