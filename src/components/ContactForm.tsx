@@ -11,7 +11,7 @@ export const ContactForm = () => {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ type: 'spring', stiffness: 30, duration: 0.6 }}
       viewport={{ once: true }}
-      name="contact-form"
+      name="contact"
       action="/success"
       className="flex flex-col gap-10 justify-center w-full text-black"
       data-netlify-honeypot="bot-field"
@@ -24,7 +24,7 @@ export const ContactForm = () => {
           Don’t fill this out: <input name="bot-field" />
         </label>
       </p>
-      <input type="hidden" name="form-name" value="contact-form" />
+      <input type="hidden" name="form-name" value="contact" />
       <label htmlFor="name" className="text-white">
         Name
       </label>
