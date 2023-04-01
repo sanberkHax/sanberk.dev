@@ -3,7 +3,7 @@ import { Typography } from './Typography';
 
 export const About = () => {
   return (
-    <section className="flex gap-10 flex-col justify-center items-center h-screen w-full text-white sm:px-10">
+    <section className="flex gap-10 flex-col justify-center items-center h-screen w-full text-white sm:px-10 2xl:px-32">
       <Typography variant="h2" bold>
         About Me
       </Typography>

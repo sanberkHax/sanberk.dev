@@ -4,7 +4,7 @@ import { IconList } from './IconList';
 
 export const Technologies = () => {
   return (
-    <section className="flex gap-24 flex-col justify-center text-center items-center h-screen w-full text-white sm:px-10">
+    <section className="flex gap-24 flex-col justify-center text-center items-center h-screen w-full text-white">
       <Typography variant="h2" bold>
         I have experience with...
       </Typography>
