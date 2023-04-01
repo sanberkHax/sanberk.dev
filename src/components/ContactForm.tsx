@@ -2,20 +2,12 @@ import { motion } from 'framer-motion';
 import { Button } from './Button';
 
 export const ContactForm = () => {
-  const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-  };
   return (
-    <motion.form
-      initial={{ opacity: 0, x: -300 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ type: 'spring', stiffness: 30, duration: 0.6 }}
-      viewport={{ once: true }}
+    <form
       name="contact-form"
       className="flex flex-col gap-10 justify-center w-full text-black"
       data-netlify-honeypot="bot-field"
       data-netlify="true"
-      onSubmit={submitHandler}
     >
       <p hidden>
         <label>
@@ -79,6 +71,6 @@ export const ContactForm = () => {
       <Button variant="sm" className="w-1/2">
         Send
       </Button>
-    </motion.form>
+    </form>
   );
 };
