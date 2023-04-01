@@ -2,7 +2,9 @@ import { motion } from 'framer-motion';
 import { Button } from './Button';
 
 export const ContactForm = () => {
-  const submitHandler = (e) => {
+  const submitHandler = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
     e.preventDefault();
   };
   return (
