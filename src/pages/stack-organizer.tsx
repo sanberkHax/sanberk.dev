@@ -1,5 +1,6 @@
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
+import { Footer } from '@/components/Footer';
 import { Icon } from '@/components/Icon';
 import { Typography } from '@/components/Typography';
 import Head from 'next/head';
@@ -278,6 +279,7 @@ export default function StackOrganizer() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

@@ -60,8 +60,8 @@ export const ICONS = {
   ),
 
   // Footer icons
-  GitHub: <SiGithub className="w-10 h-10 fill-black hover:fill-sky-700" />,
-  Linkedin: <SiLinkedin className="w-10 h-10 fill-black hover:fill-sky-700" />,
-  Twitter: <SiTwitter className="w-10 h-10 fill-black hover:fill-sky-700" />,
-  Gmail: <GrMail className="w-10 h-10 fill-black hover:fill-sky-700" />,
+  GitHub: <SiGithub className="w-10 h-10 fill-black hover:fill-white" />,
+  Linkedin: <SiLinkedin className="w-10 h-10 fill-black hover:fill-white" />,
+  Twitter: <SiTwitter className="w-10 h-10 fill-black hover:fill-white" />,
+  Gmail: <GrMail className="w-10 h-10 fill-black hover:fill-white" />,
 };

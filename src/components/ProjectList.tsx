@@ -6,7 +6,10 @@ import { TOP_PROJECTS } from '@/constants/TOP_PROJECTS';
 
 export const ProjectList = () => {
   return (
-    <section className="flex gap-56 sm:gap-96 flex-col justify-center items-center min-h-screen w-full text-white sm">
+    <section
+      id="projects"
+      className="flex scroll-mt-40 gap-56 sm:gap-96 flex-col justify-center items-center min-h-screen w-full text-white sm"
+    >
       <div>
         <Typography variant="h2" bold className="text-center">
           Top Projects
