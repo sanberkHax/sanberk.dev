@@ -1,13 +1,14 @@
 import { IconVariants } from '@/components/Icon';
 
 export const DEVELOPMENT_ICONS: IconVariants[] = [
-  'html',
-  'css',
-  'js',
-  'sass',
-  'ts',
-  'react',
-  'redux',
-  'next',
-  'jest',
+  'HTML',
+  'CSS',
+  'Sass',
+  'TailwindCSS',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'Redux',
+  'NextJS',
+  'ReactTestingLibrary',
 ];

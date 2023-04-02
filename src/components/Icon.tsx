@@ -1,75 +1,91 @@
-import { ICON_PATHS } from '@/constants/ICON_PATHS';
+import { ICONS } from '@/constants/ICONS';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import React, { ReactElement } from 'react';
 
 export type IconVariants =
-  | 'html'
-  | 'js'
-  | 'ts'
-  | 'next'
-  | 'css'
-  | 'sass'
-  | 'react'
-  | 'jest'
-  | 'figma'
-  | 'ps'
-  | 'git'
-  | 'webpack'
-  | 'npm'
-  | 'twitter'
-  | 'gmail'
-  | 'github'
-  | 'firebase'
-  | 'linkedin'
-  | 'redux';
+  | 'Linkedin'
+  | 'HTML'
+  | 'CSS'
+  | 'JavaScript'
+  | 'TailwindCSS'
+  | 'TypeScript'
+  | 'NextJS'
+  | 'React'
+  | 'Redux'
+  | 'ReactTestingLibrary'
+  | 'Figma'
+  | 'Photoshop'
+  | 'Git'
+  | 'Twitter'
+  | 'Blender'
+  | 'GitHub'
+  | 'Gmail'
+  | 'Webpack'
+  | 'NPM'
+  | 'Sass'
+  | 'Firebase'
+  | 'Vite';
 
 interface Props {
   name: IconVariants;
   link?: string;
-  isAnimated?: boolean;
   delay?: number;
   className?: string;
-  size?: number;
+  size?: 'sm' | 'md';
+  tooltip?: boolean;
 }
 
-const paths: Record<IconVariants, ReactElement> = ICON_PATHS;
+const icons: Record<IconVariants, ReactElement> = ICONS;
 
-export const Icon = ({
-  link = '',
-  isAnimated = true,
-  delay,
-  name,
-  className,
-  size = 14,
-  ...props
-}: Props) => {
-  const iconPath = paths[name];
+export const Icon = ({ link = '', delay, name, tooltip = false }: Props) => {
+  const icon = icons[name];
 
-  if (!isAnimated) {
+  if (!link) {
     return (
-      <Link href={link}>
-        <svg className={className} viewBox="0 0 128 128">
-          {iconPath}
-        </svg>
-      </Link>
-    );
-  }
-
-  return (
-    <Link href={link}>
-      <motion.svg
+      <motion.div
         initial={{ scale: 0 }}
         whileInView={{
           scale: 1,
         }}
         viewport={{ once: true }}
-        transition={{ delay }}
-        className={`w-14 h-14 sm:w-24 sm:h-24 fill-white`}
-        viewBox="0 0 128 128"
+        transition={{ delay: 0.2 }}
+        className={tooltip ? 'relative group' : ''}
       >
-        {iconPath}
-      </motion.svg>
+        {icon}
+        {tooltip && (
+          <span
+            className="group-hover:opacity-100 group-hover:inline-block hidden transition-opacity border-2 border-sky-800 bg-white z-10 text-black p-2 text-md  rounded-md absolute left-1/2 
+    -translate-x-1/2 translate-y-1/4 font-bold opacity-0 m-4 mx-auto"
+          >
+            {name}
+          </span>
+        )}
+      </motion.div>
+    );
+  }
+
+  return (
+    <Link href={link} target="__blank">
+      <motion.div
+        initial={{ scale: 0 }}
+        whileInView={{
+          scale: 1,
+        }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2 }}
+        className={tooltip ? 'relative group' : ''}
+      >
+        {icon}
+        {tooltip && (
+          <span
+            className="group-hover:opacity-100 group-hover:inline-block hidden transition-opacity border-2 border-sky-800 bg-white z-10 text-black p-2 text-md  rounded-md absolute left-1/2 
+            -translate-x-1/2 translate-y-1/4 font-bold opacity-0 m-4 mx-auto"
+          >
+            {name}
+          </span>
+        )}
+      </motion.div>
     </Link>
   );
 };
