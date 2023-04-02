@@ -33,7 +33,7 @@ export const ContactForm = () => {
             Name
           </label>
           <input
-            className="h-10 px-2 rounded-md"
+            className="h-10 px-2 rounded-md bg-white"
             type="text"
             name="name"
             required
@@ -55,7 +55,7 @@ export const ContactForm = () => {
             E-Mail
           </label>
           <input
-            className="h-10 px-2 rounded-md"
+            className="h-10 px-2 rounded-md bg-white"
             name="email"
             type="email"
             required
@@ -77,7 +77,7 @@ export const ContactForm = () => {
             Message
           </label>
           <motion.textarea
-            className="h-24 p-2 rounded-md"
+            className="h-24 p-2 rounded-md bg-white"
             name="message"
             required
           />
