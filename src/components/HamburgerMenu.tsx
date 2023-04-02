@@ -27,7 +27,7 @@ const HamburgerMenu = () => {
         toggle={setMenuOpen}
         toggled={menuOpen}
         size={36}
-        color={menuOpen ? 'black' : '#79FFFF'}
+        color={menuOpen ? 'white' : '#79FFFF'}
         easing="ease-out"
       />
       <AnimatePresence>
