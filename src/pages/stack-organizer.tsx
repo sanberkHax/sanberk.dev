@@ -14,7 +14,7 @@ export default function StackOrganizer() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gradient-to-b from-[#005687] text-white to-[#00112C] min-h-screen flex flex-col justify-center w-full p-2 sm:p-12 md:p-18 lg:p-24 xl:px-36 gap-96 items-center">
+      <main className="bg-gradient-to-b from-[#005687] text-white to-[#00112C] min-h-screen flex flex-col justify-center w-full py-20 px-8 sm:px-12 md:px-18 lg:p-24 xl:px-36 2xl:px-64 gap-96 items-center">
         <section className="flex justify-center items-center flex-col gap-10">
           <Typography variant="h1">Stack Organizer</Typography>
           <Image
@@ -70,7 +70,7 @@ export default function StackOrganizer() {
         </div>
         <section className="flex flex-col gap-10 text-center">
           <Typography variant="h2">Features</Typography>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full justify-center items-center">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-24 w-full justify-center items-center">
             <div className="flex flex-col gap-10">
               <Typography variant="h3">Authentication</Typography>
               <video controls src="/auth.mp4"></video>
@@ -95,8 +95,8 @@ export default function StackOrganizer() {
           <Typography variant="h2" className="text-center">
             My Process
           </Typography>
-          <div className="flex flex-col gap-10">
-            <div className="flex flex-col md:flex-row gap-24 items-center justify-center">
+          <div className="flex flex-col gap-36">
+            <div className="flex flex-col xl:flex-row gap-10 items-center justify-center">
               <div className="flex flex-col gap-10">
                 <Typography variant="h3">Planning</Typography>
                 <Card>
@@ -125,18 +125,12 @@ export default function StackOrganizer() {
                 src="/kanban.png"
                 width={600}
                 height={600}
+                className="m-auto"
                 alt="kanban board"
-                className="w-[300px] h-[300px] lg:w-[600px] lg:h-[600px]"
+                // className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] 2xl:w-[600px] 2xl:h-[600px]"
               />
             </div>
-            <div className="flex flex-col md:flex-row gap-24 items-center justify-center">
-              <Image
-                src="/figma.png"
-                width={600}
-                height={600}
-                alt="figma"
-                className="w-[300px] h-[300px] lg:w-[600px] lg:h-[600px]"
-              />
+            <div className="flex flex-col xl:flex-row gap-10 items-center justify-center">
               <div className="flex flex-col gap-10">
                 <Typography variant="h3">Designing</Typography>
                 <Card>
@@ -152,8 +146,16 @@ export default function StackOrganizer() {
                   </Typography>
                 </Card>
               </div>
+              <Image
+                src="/figma.png"
+                width={600}
+                height={600}
+                className="m-auto"
+                alt="figma"
+                // className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] 2xl:w-[600px] 2xl:h-[600px]"
+              />
             </div>
-            <div className="flex flex-col md:flex-row gap-24 items-center justify-center">
+            <div className="flex flex-col xl:flex-row gap-10 items-center justify-center">
               <div className="flex flex-col gap-10">
                 <Typography variant="h3">Building</Typography>
                 <Card>
@@ -184,8 +186,9 @@ export default function StackOrganizer() {
                 src="/google.png"
                 width={600}
                 height={600}
+                className="m-auto"
                 alt="building"
-                className="w-[300px] h-[300px] lg:w-[600px] lg:h-[600px]"
+                // className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] 2xl:w-[600px] 2xl:h-[600px]"
               />
             </div>
           </div>
