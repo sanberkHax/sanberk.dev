@@ -3,8 +3,8 @@ import { Typography } from './Typography';
 
 export const Footer = () => {
   return (
-    <footer className="p-4 flex-col lg:px-10 lg:flex-row bg-cyan-300 flex justify-between items-center gap-4">
-      <Typography variant="body" className="">
+    <footer className="p-4 flex-col lg:px-10 lg:flex-row bg-sky-500 flex justify-between items-center gap-4">
+      <Typography variant="body" className="text-white">
         Designed & Built by <b>Sanberk Türker</b>
       </Typography>
       <div className="flex gap-10">

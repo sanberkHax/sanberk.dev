@@ -1,7 +1,6 @@
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { Footer } from '@/components/Footer';
-import { Header } from '@/components/Header';
 import { Icon } from '@/components/Icon';
 import { Typography } from '@/components/Typography';
 import Head from 'next/head';
@@ -17,12 +16,12 @@ export default function RealStore() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="absolute top-10 left-10 z-10">
+      <header className="absolute top-10 left-8 z-10">
         <Button variant="sm" link="/">
           Back
         </Button>
       </header>
-      <main className="bg-gradient-to-b from-[#005687] text-white to-[#00112C] min-h-screen flex flex-col justify-center w-full py-20 px-8 sm:px-12 md:px-18 lg:p-24 xl:px-36 2xl:px-64 gap-96 items-center">
+      <main className="bg-gradient-to-b from-[#005687] text-white to-[#00112C] min-h-screen flex flex-col justify-center w-full py-24 px-8 sm:px-12 md:px-18 lg:p-24 xl:px-36 2xl:px-64 gap-96 items-center">
         <section className="flex justify-center items-center flex-col gap-10">
           <Typography variant="h1">Real Store</Typography>
           <Image
