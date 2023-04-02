@@ -32,7 +32,7 @@ export default function StackOrganizer() {
           href="/favicon-16x16.png"
         />
       </Head>
-      <header className="absolute top-10 left-10 z-10">
+      <header className="absolute top-20 left-10 lg:left-32 z-10">
         <Button variant="sm" link="/">
           Back
         </Button>

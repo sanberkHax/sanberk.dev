@@ -33,7 +33,7 @@ export default function RealStore() {
           href="/favicon-16x16.png"
         />
       </Head>
-      <header className="absolute top-10 left-8 z-10">
+      <header className="absolute top-20 left-4 lg:left-32 z-10">
         <Button variant="sm" link="/">
           Back
         </Button>
