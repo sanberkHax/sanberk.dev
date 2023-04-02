@@ -1,7 +1,6 @@
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { Footer } from '@/components/Footer';
-import { Header } from '@/components/Header';
 import { Icon } from '@/components/Icon';
 import { Typography } from '@/components/Typography';
 import Head from 'next/head';
@@ -52,19 +51,19 @@ export default function StackOrganizer() {
           <Card className="card">
             <Typography variant="body">
               I built Stack Organizer because I realized I kept getting lost in
-              multiple Stack Overflow tabs for different problems every time I
-              was working on a project.
+              multiple Stack Overflow tabs for different or the same questions
+              every time I was working on a project.
             </Typography>
             <Typography variant="body">
-              You search for one problem and find a solution, but that solution
-              leads to another problem, then that leads to another, then
+              You search for one question and find a solution, but that solution
+              leads to another question, then that leads to another, then
               another...
             </Typography>
             <Typography variant="body">
-              So I decided to solve this problem by building an organizing app
-              that allows you to save your desired solutions inside a dedicated
-              project or inside categorized nested folders to keep things even
-              more organized.
+              {`That's why I decided to solve this problem by building an
+              organizing app that allows you to save your desired solutions
+              inside a dedicated project or categorized nested folders that you
+              can come back to any moment.`}
             </Typography>
           </Card>
         </div>

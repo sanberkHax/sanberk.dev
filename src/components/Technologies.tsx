@@ -15,14 +15,14 @@ export const Technologies = () => {
           </Typography>
           <IconList type="development" />
         </div>
-        <div className="flex w-full justify-around">
-          <div className="flex flex-col gap-10">
+        <div className="flex w-full justify-around gap-10 lg:gap-36">
+          <div className="flex flex-col gap-10 flex-1">
             <Typography variant="h3" bold underline>
               Design
             </Typography>
             <IconList type="design" />
           </div>
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-10 flex-1">
             <Typography variant="h3" bold underline>
               Tools
             </Typography>

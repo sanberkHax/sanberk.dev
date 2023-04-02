@@ -54,8 +54,7 @@ export default function RealStore() {
               Redux and React Testing Library combination.
             </Typography>
             <Typography variant="body">
-              I chose a simple design and focused more on clean code and best
-              practices.
+              This was also a practice for migrating a React app to Next.js.
             </Typography>
           </Card>
         </div>
@@ -95,45 +94,56 @@ export default function RealStore() {
           <div className="flex flex-col gap-36">
             <Card>
               <Typography variant="body">
-                My first step was researching how real world projects are built
-                from start to finish. As this was my first big project, I needed
-                to learn a lot about how to plan a project.
+                {`This project started as a simple e-commerce test assignment for React. Then I decided to migrate it to Next.js and refactor it into a cleaner and solid project.`}
               </Typography>
               <Typography variant="body">
-                Without even touching any code, I started brainstorming what
-                features I need for the Minimum Viable Product and researched
-                how it can be built.
+                I started migration process by changing the project structure
+                first. Then I gradually refactored existing components and added
+                new ones with appropriate tests.
               </Typography>
               <Typography variant="body">
-                After figuring out the MVP, I wanted to use an Agile methodology
-                to manage the project, so decided to go with Kanban because it
-                would be better for a single person project. I used Trello to
-                create the Kanban board. Then broke down the MVP to small
-                managable tasks backed up by user stories.
+                Previous version also had a different API provided with the
+                assignment so I deleted it and integrated Fake Store API
+                instead. Because it would give me more freedom to work with.
               </Typography>
             </Card>
           </div>
         </section>
-        <section className="flex flex-col gap-10">
+        <section className="flex flex-col gap-24">
           <Typography variant="h2" className="text-center">
             Problems I have Faced
           </Typography>
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-16">
             <div className="flex flex-col gap-10">
               <Typography variant="h3">
-                Testing with Redux & TypeScript
+                Testing with Redux Persist & TypeScript
               </Typography>
               <Card>
                 <Typography variant="body">
-                  Even though {`I've`} used Firebase in my other projects
-                  before, none of those projects scale was as big as this one.
-                  So I spent few days how to properly integrate Firebase with
-                  Automated Testing and Redux.
+                  Even though I have experience testing Redux applications with
+                  TypeScript, this was my first time using redux-persist package
+                  for persisting the Redux state in localStorage.
                 </Typography>
                 <Typography variant="body">
-                  After dealing with bunch of small bugs, I eventually set up
-                  Firebase Emulators for Automated Testing to mock Firebase
-                  services in tests.
+                  {`So I struggled for quite some time trying to type my test
+                  utilities in compliance with redux-persist but I encountered a
+                  bug where react-testing-library's helper functions kept
+                  throwing type error because of redux-persist. And apparently
+                  there is an open PR for this issue but it still hasn't merged
+                  yet.`}
+                </Typography>
+              </Card>
+            </div>
+            <div className="flex flex-col gap-10">
+              <Typography variant="h3">Stripe</Typography>
+              <Card>
+                <Typography variant="body">
+                  I tried to integrate Stripe for the checkout process to make
+                  it as close to a real world application as possible. But I
+                  would have to use their own form component instead of my own.
+                  And it had a lot of unnecessary fields that would confuse
+                  people. So I moved on from this idea and implemented my own
+                  components instead.
                 </Typography>
               </Card>
             </div>
@@ -145,26 +155,11 @@ export default function RealStore() {
           </Typography>
           <Card>
             <Typography variant="body">
-              This whole project was a challenge on another level but also a
-              great opportunity to improve my knowledge, because stepping out of
-              my comfort zone and diving right into something new is the best
-              way for me to learn something.
+              This project has helped me learn more about TypeScript and
+              practice usage with Redux and Testing.
             </Typography>
             <Typography variant="body">
-              {`I've`} learned how to manage complex states with Redux and how
-              to store data efficiently in database to work with.
-            </Typography>
-            <Typography variant="body">
-              Greatly improved my knowledge on Automated Testing.
-            </Typography>
-            <Typography variant="body">
-              Got the grasp of managing a bigger scale project from start to
-              finish.
-            </Typography>
-            <Typography variant="body">
-              And found out Stack Organizer is actually useful, because I kept
-              getting lost inside multiple Stack Overflow tabs and wished I had
-              built it sooner.
+              I also learned how to migrate a React project to Next.js.
             </Typography>
           </Card>
         </section>
