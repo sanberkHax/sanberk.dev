@@ -44,7 +44,7 @@ export const Project = ({
   }
   return (
     <div className="flex-1 flex flex-col gap-10 items-center my-10">
-      <Card>
+      <Card className="max-w-full">
         <Typography variant="h3" bold className="text-[#00E0FF] z-10">
           {title}
         </Typography>
