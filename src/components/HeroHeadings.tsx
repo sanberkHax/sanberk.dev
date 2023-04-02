@@ -6,11 +6,11 @@ export const HeroHeadings = () => {
       <Typography
         variant="body"
         className="absolute sm:-left-14 -top-10"
-        // animation={{
-        //   initial: { opacity: 0, x: -600 },
-        //   animate: { opacity: 1, x: 0 },
-        //   transition: { type: 'spring', bounce: 0.2, duration: 0.6 },
-        // }}
+        animation={{
+          initial: { opacity: 0, x: -600 },
+          animate: { opacity: 1, x: 0 },
+          transition: { type: 'spring', bounce: 0.2, duration: 0.6 },
+        }}
       >
         {`Hi there, I'm`}
       </Typography>
@@ -18,17 +18,17 @@ export const HeroHeadings = () => {
         variant="h1"
         underline
         bold
-        className="text-sm md:text-6xl"
-        // animation={{
-        //   initial: { opacity: 0, x: -600 },
-        //   animate: { opacity: 1, x: 0 },
-        //   transition: {
-        //     type: 'spring',
-        //     bounce: 0.2,
-        //     duration: 0.6,
-        //     delay: 0.5,
-        //   },
-        // }}
+        className="text-sm md:text-6xl whitespace-nowrap"
+        animation={{
+          initial: { opacity: 0, x: -600 },
+          animate: { opacity: 1, x: 0 },
+          transition: {
+            type: 'spring',
+            bounce: 0.2,
+            duration: 0.6,
+            delay: 0.5,
+          },
+        }}
       >
         {` Sanberk Türker`}
       </Typography>
@@ -36,16 +36,16 @@ export const HeroHeadings = () => {
         variant="body"
         bold
         className="animate-slideReveal"
-        // animation={{
-        //   initial: { opacity: 0, x: -600 },
-        //   animate: { opacity: 1, x: 0 },
-        //   transition: {
-        //     type: 'spring',
-        //     bounce: 0.2,
-        //     duration: 0.6,
-        //     delay: 1,
-        //   },
-        // }}
+        animation={{
+          initial: { opacity: 0, x: -600 },
+          animate: { opacity: 1, x: 0 },
+          transition: {
+            type: 'spring',
+            bounce: 0.2,
+            duration: 0.6,
+            delay: 1,
+          },
+        }}
       >
         <span className="text-[#00E0FF]">{'< '}</span>
         Frontend Developer

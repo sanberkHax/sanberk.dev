@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <section
       id="index"
-      className="flex justify-center items-center flex-col h-screen gap-6 md:gap-16  lg:gap-36"
+      className="flex w-full justify-center items-center flex-col h-screen gap-6 md:gap-16  lg:gap-36"
     >
       <div className="flex justify-center items-center flex-col lg:flex-row gap-10 sm:gap-4 xl:gap-24">
         <motion.div
