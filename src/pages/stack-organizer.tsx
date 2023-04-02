@@ -19,6 +19,7 @@ export default function StackOrganizer() {
         <section className="flex justify-center items-center flex-col gap-10">
           <Typography variant="h1">Stack Organizer</Typography>
           <Image
+            priority
             className="stack-organizer-details__img"
             src="/stack-organizer-login.png"
             alt="stack organizer screenshot"
