@@ -8,7 +8,7 @@ export const ProjectList = () => {
   return (
     <section
       id="projects"
-      className="flex scroll-mt-40 gap-56 sm:gap-96 flex-col justify-center items-center min-h-screen w-full text-white sm"
+      className="flex scroll-mt-20 sm:scroll-mt-40 gap-56 sm:gap-96 flex-col justify-center items-center min-h-screen w-full text-white sm"
     >
       <div>
         <Typography variant="h2" bold className="text-center">
