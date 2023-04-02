@@ -5,7 +5,7 @@ export const HeroHeadings = () => {
     <div className="relative text-white flex flex-col gap-4 sm:gap-10 justify-center items-center">
       <Typography
         variant="body"
-        className="absolute left-1/4 sm:-left-14 -top-10"
+        className="absolute sm:-left-14 -top-10"
         animation={{
           initial: { opacity: 0, x: -600 },
           animate: { opacity: 1, x: 0 },
