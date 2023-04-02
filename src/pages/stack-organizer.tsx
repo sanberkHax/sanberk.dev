@@ -1,6 +1,7 @@
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
 import { Icon } from '@/components/Icon';
 import { Typography } from '@/components/Typography';
 import Head from 'next/head';
@@ -15,6 +16,11 @@ export default function StackOrganizer() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header className="absolute top-10 left-10 z-10">
+        <Button variant="sm" link="/">
+          Back
+        </Button>
+      </header>
       <main className="bg-gradient-to-b from-[#005687] text-white to-[#00112C] min-h-screen flex flex-col justify-center w-full py-20 px-8 sm:px-12 md:px-18 lg:p-24 xl:px-36 2xl:px-64 gap-96 items-center">
         <section className="flex justify-center items-center flex-col gap-10">
           <Typography variant="h1">Stack Organizer</Typography>
@@ -40,7 +46,9 @@ export default function StackOrganizer() {
         </section>
 
         <div className="flex flex-col gap-10">
-          <Typography variant="h2">Purpose of The Project</Typography>
+          <Typography variant="h2" className="text-center">
+            Purpose of The Project
+          </Typography>
           <Card className="card">
             <Typography variant="body">
               I built Stack Organizer because I realized I kept getting lost in
@@ -62,7 +70,7 @@ export default function StackOrganizer() {
         </div>
         <div className="flex flex-col gap-10 text-center">
           <Typography variant="h2">Tech Stack</Typography>
-          <div className="flex flex-wrap gap-10">
+          <div className="flex flex-wrap gap-10 justify-center items-center">
             <Icon name="React" tooltip />
             <Icon name="Redux" tooltip />
             <Icon name="Sass" tooltip />
@@ -248,36 +256,34 @@ export default function StackOrganizer() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col gap-10">
-          <div className="flex flex-col gap-10">
-            <Typography variant="h2" className="text-center">
-              What I have Learned
+        <section className="flex flex-col gap-10 my-56">
+          <Typography variant="h2" className="text-center">
+            What I have Learned
+          </Typography>
+          <Card>
+            <Typography variant="body">
+              This whole project was a challenge on another level but also a
+              great opportunity to improve my knowledge, because stepping out of
+              my comfort zone and diving right into something new is the best
+              way for me to learn something.
             </Typography>
-            <Card>
-              <Typography variant="body">
-                This whole project was a challenge on another level but also a
-                great opportunity to improve my knowledge, because stepping out
-                of my comfort zone and diving right into something new is the
-                best way for me to learn something.
-              </Typography>
-              <Typography variant="body">
-                {`I've`} learned how to manage complex states with Redux and how
-                to store data efficiently in database to work with.
-              </Typography>
-              <Typography variant="body">
-                Greatly improved my knowledge on Automated Testing.
-              </Typography>
-              <Typography variant="body">
-                Got the grasp of managing a bigger scale project from start to
-                finish.
-              </Typography>
-              <Typography variant="body">
-                And found out Stack Organizer is actually useful, because I kept
-                getting lost inside multiple Stack Overflow tabs and wished I
-                had built it sooner.
-              </Typography>
-            </Card>
-          </div>
+            <Typography variant="body">
+              {`I've`} learned how to manage complex states with Redux and how
+              to store data efficiently in database to work with.
+            </Typography>
+            <Typography variant="body">
+              Greatly improved my knowledge on Automated Testing.
+            </Typography>
+            <Typography variant="body">
+              Got the grasp of managing a bigger scale project from start to
+              finish.
+            </Typography>
+            <Typography variant="body">
+              And found out Stack Organizer is actually useful, because I kept
+              getting lost inside multiple Stack Overflow tabs and wished I had
+              built it sooner.
+            </Typography>
+          </Card>
         </section>
       </main>
       <Footer />
