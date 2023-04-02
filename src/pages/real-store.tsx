@@ -12,7 +12,7 @@ export default function RealStore() {
     <>
       <Head>
         <title>Real Store</title>
-        <meta name="description" content="Stack Organizer" />
+        <meta name="description" content="Real Store" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link
@@ -38,16 +38,18 @@ export default function RealStore() {
           Back
         </Button>
       </header>
-      <main className="bg-gradient-to-b from-[#005687] text-white to-[#00112C] min-h-screen flex flex-col justify-center w-full py-24 px-8 sm:px-12 md:px-18 lg:p-24 xl:px-36 2xl:px-64 gap-96 items-center">
-        <section className="flex justify-center items-center flex-col gap-10">
-          <Typography variant="h1">Real Store</Typography>
-          <Image
+      <main className="bg-gradient-to-b from-[#005687] text-white to-[#00112C] min-h-screen flex flex-col justify-center w-full py-20 px-8 sm:px-12 md:px-18 lg:p-24 xl:px-36 2xl:px-64 gap-96 items-center">
+        <section className="flex justify-center items-center flex-col gap-32 pt-24">
+          <Typography variant="h1" underline>
+            Real Store
+          </Typography>
+          {/* <Image
             priority
             src="/real-store.png"
             alt="real store screenshot"
             width={700}
             height={700}
-          />
+          /> */}
           <div className="flex gap-10">
             <Button
               link="https://github.com/sanberkHax/real-store"
@@ -59,22 +61,22 @@ export default function RealStore() {
               Live Site
             </Button>
           </div>
+          <div className="flex flex-col gap-10">
+            <Typography variant="h2" className="text-center">
+              Purpose of The Project
+            </Typography>
+            <Card className="card">
+              <Typography variant="body">
+                I built Real Store because I wanted to study TypeScript,
+                Next.js, Redux and React Testing Library combination.
+              </Typography>
+              <Typography variant="body">
+                This was also a practice for migrating a React app to Next.js.
+              </Typography>
+            </Card>
+          </div>
         </section>
 
-        <div className="flex flex-col gap-10">
-          <Typography variant="h2" className="text-center">
-            Purpose of The Project
-          </Typography>
-          <Card className="card">
-            <Typography variant="body">
-              I built Real Store because I wanted to study TypeScript, Next.js,
-              Redux and React Testing Library combination.
-            </Typography>
-            <Typography variant="body">
-              This was also a practice for migrating a React app to Next.js.
-            </Typography>
-          </Card>
-        </div>
         <div className="flex flex-col gap-10 text-center">
           <Typography variant="h2">Tech Stack</Typography>
           <div className="flex flex-wrap gap-10 justify-center items-center">

@@ -38,16 +38,17 @@ export default function StackOrganizer() {
         </Button>
       </header>
       <main className="bg-gradient-to-b from-[#005687] text-white to-[#00112C] min-h-screen flex flex-col justify-center w-full py-20 px-8 sm:px-12 md:px-18 lg:p-24 xl:px-36 2xl:px-64 gap-96 items-center">
-        <section className="flex justify-center items-center flex-col gap-10">
-          <Typography variant="h1">Stack Organizer</Typography>
-          <Image
+        <section className="flex justify-center items-center flex-col gap-32 pt-24">
+          <Typography variant="h1" underline>
+            Stack Organizer
+          </Typography>
+          {/* <Image
             priority
-            className="stack-organizer-details__img"
             src="/stack-organizer-login.png"
             alt="stack organizer screenshot"
             width={700}
             height={700}
-          />
+          /> */}
           <div className="flex gap-10">
             <Button
               link="https://github.com/sanberkHax/stack-organizer"
@@ -59,31 +60,31 @@ export default function StackOrganizer() {
               Live Site
             </Button>
           </div>
-        </section>
-
-        <div className="flex flex-col gap-10">
-          <Typography variant="h2" className="text-center">
-            Purpose of The Project
-          </Typography>
-          <Card className="card">
-            <Typography variant="body">
-              I built Stack Organizer because I realized I kept getting lost in
-              multiple Stack Overflow tabs for different or the same questions
-              every time I was working on a project.
+          <div className="flex flex-col gap-10">
+            <Typography variant="h2" className="text-center">
+              Purpose of The Project
             </Typography>
-            <Typography variant="body">
-              You search for one question and find a solution, but that solution
-              leads to another question, then that leads to another, then
-              another...
-            </Typography>
-            <Typography variant="body">
-              {`That's why I decided to solve this problem by building an
+            <Card className="card">
+              <Typography variant="body">
+                I built Stack Organizer because I realized I kept getting lost
+                in multiple Stack Overflow tabs for different or the same
+                questions every time I was working on a project.
+              </Typography>
+              <Typography variant="body">
+                You search for one question and find a solution, but that
+                solution leads to another question, then that leads to another,
+                then another...
+              </Typography>
+              <Typography variant="body">
+                {`That's why I decided to solve this problem by building an
               organizing app that allows you to save your desired solutions
               inside a dedicated project or categorized nested folders that you
               can come back to any moment.`}
-            </Typography>
-          </Card>
-        </div>
+              </Typography>
+            </Card>
+          </div>
+        </section>
+
         <div className="flex flex-col gap-10 text-center">
           <Typography variant="h2">Tech Stack</Typography>
           <div className="flex flex-wrap gap-10 justify-center items-center">
