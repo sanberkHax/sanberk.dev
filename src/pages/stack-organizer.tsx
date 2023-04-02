@@ -61,11 +61,11 @@ export default function StackOrganizer() {
         <div className="flex flex-col gap-10 text-center">
           <Typography variant="h2">Tech Stack</Typography>
           <div className="flex flex-wrap gap-10">
-            <Icon name="react" />
-            <Icon name="redux" />
-            <Icon name="sass" />
-            <Icon name="jest" />
-            <Icon name="firebase" />
+            <Icon name="React" tooltip />
+            <Icon name="Redux" tooltip />
+            <Icon name="Sass" tooltip />
+            <Icon name="ReactTestingLibrary" tooltip />
+            <Icon name="Firebase" tooltip />
           </div>
         </div>
         <section className="flex flex-col gap-10 text-center">
@@ -127,7 +127,6 @@ export default function StackOrganizer() {
                 height={600}
                 className="m-auto"
                 alt="kanban board"
-                // className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] 2xl:w-[600px] 2xl:h-[600px]"
               />
             </div>
             <div className="flex flex-col xl:flex-row gap-10 items-center justify-center">
@@ -152,7 +151,6 @@ export default function StackOrganizer() {
                 height={600}
                 className="m-auto"
                 alt="figma"
-                // className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] 2xl:w-[600px] 2xl:h-[600px]"
               />
             </div>
             <div className="flex flex-col xl:flex-row gap-10 items-center justify-center">
@@ -188,7 +186,6 @@ export default function StackOrganizer() {
                 height={600}
                 className="m-auto"
                 alt="building"
-                // className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] 2xl:w-[600px] 2xl:h-[600px]"
               />
             </div>
           </div>

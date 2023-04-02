@@ -17,7 +17,6 @@ import {
   SiFirebase,
   SiLinkedin,
   SiGithub,
-  SiGmail,
 } from 'react-icons/si';
 import { FaSass, FaNpm } from 'react-icons/fa';
 import ViteIcon from '@/assets/vite.svg';
