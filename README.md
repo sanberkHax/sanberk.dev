@@ -2,7 +2,10 @@
 
 It's been almost a year since I made my first portfolio website so I decided make a new and better one.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Tech Stack
+- TypeScript
+- Tailwind CSS
+- Next.js (SSG)
 
 ## Getting Started
 
